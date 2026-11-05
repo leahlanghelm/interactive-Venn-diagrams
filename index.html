@@ -106,5 +106,7 @@ hits.forEach(hit=>hit.addEventListener('click',()=>selectRegion(hit.dataset.cell
 search.addEventListener('input',()=>{if(!current) return; renderList(vennData[current.cell].regions[current.region].metabolites);});
 document.getElementById('resetBtn').addEventListener('click',()=>{current=null;hits.forEach(h=>h.classList.remove('active'));summaryBox.textContent='Select a region in the diagram.';search.value='';list.innerHTML='<div class="empty">No region selected yet.</div>';});
 </script>
+  <!-- Dieser Code erzeugt einen anklickbaren Link zur zweiten Seite -->
+<p><a href="fractions.html" style="font-size: 18px; color: #007bff; font-weight: bold; text-decoration: underline;">👉 Hier klicken, um zur zweiten Analyse-Seite zu gelangen</a></p>
 </body>
 </html>
